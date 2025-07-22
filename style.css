@@ -1,0 +1,48 @@
+
+body {
+  margin: 0;
+  font-family: 'Orbitron', sans-serif;
+  background: black;
+  color: white;
+  overflow-x: hidden;
+}
+h1 {
+  text-align: center;
+  font-size: 3em;
+  margin: 20px 0;
+}
+.container {
+  padding: 20px;
+}
+.menu {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+.item {
+  background-color: rgba(255,255,255,0.1);
+  border-radius: 12px;
+  padding: 10px;
+  width: 200px;
+  text-align: center;
+  box-shadow: 0 0 15px yellow;
+}
+.item img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+.stars {
+  background: url('https://i.imgur.com/8YUVB7Z.jpg') repeat;
+  position: fixed;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  z-index: -1;
+  animation: moveStars 60s linear infinite;
+}
+@keyframes moveStars {
+  from {background-position: 0 0;}
+  to {background-position: 10000px 10000px;}
+}
