@@ -1,0 +1,135 @@
+body {
+  font-family: 'Segoe UI', sans-serif;
+  margin: 0;
+  background: #0c0c22;
+  color: white;
+  overflow-x: hidden;
+}
+
+header {
+  text-align: center;
+  padding: 2rem 1rem;
+  position: relative;
+  z-index: 2;
+}
+
+.flashy-title {
+  font-size: 2.3rem;
+  color: #fff176;
+  text-shadow: 0 0 10px #fff176, 0 0 20px #ffa;
+}
+
+.glow-star {
+  color: #ffeb3b;
+  animation: twinkle 2s infinite alternate;
+}
+
+.scroll-down {
+  margin-top: 1rem;
+  padding: 0.5rem 1rem;
+  background: #ffdd59;
+  color: #000;
+  border-radius: 25px;
+  border: none;
+  font-weight: bold;
+}
+
+.menu {
+  padding: 2rem 1rem;
+  text-align: center;
+}
+
+.items {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1.5rem;
+}
+
+.item {
+  background: rgba(255,255,255,0.05);
+  padding: 1rem;
+  border-radius: 15px;
+  width: 170px;
+}
+
+.item img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.quantity {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+  margin-top: 0.5rem;
+}
+
+.quantity button {
+  background: #ffdd59;
+  border: none;
+  padding: 0.3rem 0.7rem;
+  font-weight: bold;
+  border-radius: 8px;
+}
+
+.cart-float {
+  position: fixed;
+  bottom: 80px;
+  right: 20px;
+  background: #25D366;
+  color: white;
+  font-size: 1.6rem;
+  padding: 0.6rem 1rem;
+  border-radius: 50%;
+  box-shadow: 0 0 10px #25D366;
+  text-decoration: none;
+  z-index: 10;
+}
+
+.go-to-cart {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: #1c1c3c;
+  padding: 1rem;
+  text-align: center;
+  z-index: 9;
+}
+
+.go-to-cart button {
+  background: #ffdd59;
+  border: none;
+  padding: 0.8rem 2rem;
+  font-weight: bold;
+  border-radius: 25px;
+}
+
+footer {
+  padding: 2rem 1rem;
+  background: #0c0c22;
+  color: white;
+  font-size: 0.9rem;
+  text-align: center;
+}
+
+.stars, .stars2, .stars3 {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background-repeat: repeat;
+  background-size: contain;
+  z-index: 0;
+  opacity: 0.2;
+}
+
+.stars { background-image: url('https://cdn.pixabay.com/photo/2013/07/18/10/56/star-163046_1280.jpg'); animation: moveStars 200s linear infinite; }
+.stars2 { background-image: url('https://cdn.pixabay.com/photo/2017/08/06/00/47/star-2584746_1280.jpg'); animation: moveStars 300s linear infinite; }
+.stars3 { background-image: url('https://cdn.pixabay.com/photo/2016/03/05/19/02/star-1235339_1280.jpg'); animation: moveStars 400s linear infinite; }
+
+@keyframes moveStars {
+  from { background-position: 0 0; }
+  to { background-position: 10000px 10000px; }
+}
