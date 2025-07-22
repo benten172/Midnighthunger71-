@@ -1,0 +1,123 @@
+
+body {
+  font-family: 'Star Jedi', sans-serif;
+  margin: 0;
+  background: #000;
+  color: white;
+  overflow-x: hidden;
+}
+
+header {
+  text-align: center;
+  padding: 2rem 1rem;
+  position: relative;
+  z-index: 2;
+}
+
+.flashy-title {
+  font-size: 2.5rem;
+  color: #ffe81f;
+  text-shadow: 0 0 10px #ffe81f, 0 0 20px #ffa;
+}
+
+.glow-star {
+  color: #ffeb3b;
+  animation: twinkle 2s infinite alternate;
+}
+
+.scroll-down {
+  margin-top: 1rem;
+  padding: 0.5rem 1rem;
+  background: #ffdd59;
+  color: #000;
+  border-radius: 25px;
+  border: none;
+  font-weight: bold;
+}
+
+.menu {
+  padding: 2rem 1rem;
+  text-align: center;
+}
+
+.items {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1.5rem;
+}
+
+.item {
+  background: rgba(255,255,255,0.05);
+  padding: 1rem;
+  border-radius: 15px;
+  width: 170px;
+}
+
+.item img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.quantity {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+  margin-top: 0.5rem;
+}
+
+.quantity button {
+  background: #ffdd59;
+  border: none;
+  padding: 0.3rem 0.7rem;
+  font-weight: bold;
+  border-radius: 8px;
+}
+
+.cart-float {
+  position: fixed;
+  bottom: 80px;
+  right: 20px;
+  background: #25D366;
+  color: white;
+  font-size: 1.6rem;
+  padding: 0.6rem 1rem;
+  border-radius: 50%;
+  box-shadow: 0 0 10px #25D366;
+  text-decoration: none;
+  z-index: 10;
+}
+
+.go-to-cart {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: #1c1c3c;
+  padding: 1rem;
+  text-align: center;
+  z-index: 9;
+}
+
+.go-to-cart button {
+  background: #ffdd59;
+  border: none;
+  padding: 0.8rem 2rem;
+  font-weight: bold;
+  border-radius: 25px;
+}
+
+footer {
+  padding: 2rem 1rem;
+  background: #000;
+  color: white;
+  font-size: 0.9rem;
+  text-align: center;
+}
+
+@keyframes twinkle {
+  from { opacity: 1; }
+  to { opacity: 0.3; }
+}
+    
